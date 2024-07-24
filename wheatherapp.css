@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: url(clouds.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #171717;
+    overflow: hidden;
+
+}
+.container {
+    background-color: #fdffe8;
+    color: #171717;
+    padding: 2rem;
+    width: 30%;
+    margin: 4rem auto;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+}
+
+.Weatherheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.weathersearch {
+    position: relative;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background: #1e1e1e;
+    color: aliceblue;
+    outline: none;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input::placeholder {
+    color: #f7f7f7;
+}
+
+.weathersearch i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    color: #fff;
+}
+
+.weatherbody {
+    margin-bottom: 2rem;
+}
+
+.weatherbody h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.weatherbody p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.weatherforecast {
+    background: #171717;
+    color: white;
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+
+}
+
+.weathericon {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.weathertemperature {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.weatherminmax {
+    font-size: 1rem;
+    color: #242424;
+}
+
+.weatherinfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.weathercard {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 48%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weathercard i {
+    font-size: 2rem;
+    color: #000;
+}
+
+.weathercard div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.weathercard p {
+    margin: 0;
+}
+
+.weatherfeelslike, .weatherhumidity, .weatherwind, .weatherpressure {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+.weather-flex{
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    max-height: 100px;
+    padding-top: 20px;
+}

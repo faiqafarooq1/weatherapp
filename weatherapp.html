@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="wheatherapp.css" />
+  </head>
+  <body>
+    <section class="container">
+      <!-- input field -->
+      <div class="Weatherheader">
+        <form class="weathersearch">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            type="text"
+            class="cityname"
+            placeholder="Search your city.."
+          />
+        </form>
+      </div>
+      <div class="weatherbody">
+        <h1 class="weathercity"></h1>
+        <p class="weatherdatetime"></p>
+        <p class="weatherforecast"></p>
+        <div class="weather-flex">
+          <div class="weatherdata">
+            <div class="weathericon"></div>
+          </div>
+          <div>
+            <p class="weathertemperature"></p>
+            <div class="weatherminmax">
+              <p class="weathermin"></p>
+              <p class="weathermax"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="weatherinfo">
+        <div class="weathercard">
+          <i class="fa-solid fa-temperature-three-quarters"></i>
+          <div>
+            <p>Feels Like</p>
+            <p class="weatherfeelslike"></p>
+          </div>
+        </div>
+        <div class="weathercard">
+          <i class="fa-solid fa-droplet"></i>
+          <div>
+            <p>Humidity</p>
+            <p class="weatherhumidity"></p>
+          </div>
+        </div>
+        <div class="weathercard">
+          <i class="fa-solid fa-wind"></i>
+          <div>
+            <p>Wind</p>
+            <p class="weatherwind"></p>
+          </div>
+        </div>
+        <div class="weathercard">
+          <i class="fa-solid fa-gauge-high"></i>
+          <div>
+            <p>Pressure</p>
+            <p class="weatherpressure"></p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <script src="weatherapp.js"></script>
+  </body>
+</html>
